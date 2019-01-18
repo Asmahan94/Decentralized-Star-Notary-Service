@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StarNotary DAPP Front End</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+<div class="limiter">
+  <div class="container-login100">
+  <div class="wrap-login100">
+      <form class="login100-form validate-form">
+          <span class="login100-form-title p-b-26">
+              StarNotary Token DAPP
+            </span> 
+        <span class="login100-form-title p-b-26">
+              Create a Star
+            </span>
+   <div class="wrap-input100 validate-input" >
+      <label for="starName">Star Name:</label>
+    <input id="starName" class="input100" type="text">
+</div>
+
+<div class="wrap-input100 validate-input" >
+    <label for="starId">Star ID:</label>
+  <input id="starId" class="input100" type="text" >
+</div>
+
+<div class="container-login100-form-btn">
+  <div class="wrap-login100-form-btn">
+    <div class="login100-form-bgbtn"></div>
+    <button class="login100-form-btn" id="createStar" onclick="App.createStar()">
+            Create Star
+    </button>
+  </div>
+</div>
+
+<span id="status"></span>
+<form class="login100-form validate-form">
+<div class="container-login100-form-btn">
+</div>
+<div class="container-login100-form-btn">
+<div class="wrap-login100-form-btn">
+  <div class="wrap-input100 validate-input" >
+      <span class="focus-input100" data-placeholder="Star ID"></span>
+    <input id="starId1" class="input100" type="text" name="starID">
+</div>
+</div>
+</div>
+<div class="container-login100-form-btn">
+<div class="wrap-login100-form-btn">
+<div class="login100-form-bgbtn"></div>
+<button id="lookUpStar" class="login100-form-btn" onclick="App.lookupStar()">
+           Lookup Star
+</button>
+</div>
+</div>
+  <span id="starName1"></span>
+</form>
+</div>   
+</div>
+</div>
+    <br>
+</body>
+</html>
